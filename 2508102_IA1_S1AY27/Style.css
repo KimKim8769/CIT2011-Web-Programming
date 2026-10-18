@@ -1,0 +1,429 @@
+/* Kemesha Waugh - 2508102 */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+:root {
+    --black: rgb(234, 7, 135);
+    --gold: #b8b01e;
+    --hint-yellow: rgb(241, 241, 211);
+    --pure-white: rgb(196, 188, 188);
+    --green: #9b25c3;
+}
+
+body {
+    background: var(--pure-white);
+    overflow-x: hidden;
+}
+
+a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.p-top {
+    padding-top: 10rem;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+/* HEADER STYLING */
+.navbar {
+    min-height: 14vh;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+.button {
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: var(--gold);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: var(--pure-white);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+    text-align: center;
+}
+
+.button:hover {
+    background: var(--black);
+    color: white;
+}
+
+.cart_icon {
+    position: relative;
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+.cart_icon .cart_value {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: .85rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--black);
+    text-align: center;
+    line-height: 20px;
+    transform: translateY(-50%);
+}
+
+.desktop-action .bar_icon {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+/* FOOTER */
+footer {
+    background: var(--hint-yellow);
+    padding: 3rem 1.5rem;
+    margin-top: 6rem;
+}
+
+footer p {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+/* PERSONAL PORTFOLIO STYLING */
+
+body {
+background-color: #f8f5f0;
+color: #333333;
+}
+
+/* Centre the navigation links */
+nav {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 1.5rem;
+padding: 1.5rem;
+background-color: #234e52;
+}
+
+/* Centre the headings only */
+#home h1,
+#home h2 {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Style the main heading */
+#home h1 {
+font-family: "Playfair Display", serif;
+font-size: 3rem;
+margin-bottom: 1rem;
+color: rgb(234, 7, 135);
+}
+
+/* Style the About Me heading */
+#home h2 {
+font-family: "Playfair Display", serif;
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #9b25c3;
+}
+
+/* Keep your personal information in its original font */
+#home p {
+   font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: left;
+    color: #555555;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#home img {
+display: block;
+width: 45%;
+max-width: 450px;
+height: auto;
+margin: 1.5rem auto;
+border-radius: 10px;
+}
+
+/* Make the photograph fit better on mobile screens */
+@media screen and (max-width: 780px) {
+#home h1 {
+font-size: 2.2rem;
+}
+
+#home h2 {
+    font-size: 1.7rem;
+}
+
+#home img {
+    width: 85%;
+}
+
+}
+
+/* PROFESSIONAL PAGE LAYOUT */
+
+#professional-page {
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#professional-page > h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: rgb(7, 61, 241);
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#professional-page section {
+    display: block;
+    width: 100%;
+    background-color: #efebeb;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#professional-page h2 {
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    color: #08e43f;
+    font-size: 1.6rem;
+    margin: 0 0 15px;
+    border-bottom: 2px solid #f3d5ee;
+    padding-bottom: 8px;
+}
+
+#professional-page h3,
+#professional-page h4 {
+    text-align: left;
+    color: #234e52;
+    margin: 15px 0 8px;
+}
+
+#professional-page p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 8px 0;
+    padding: 0;
+}
+
+#professional-page ul {
+    padding-left: 25px;
+    margin: 10px 0;
+}
+
+#professional-page li {
+    list-style: disc;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+#professional-page a {
+    color: #b1d823;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+#professional-page a:hover {
+    color: #9b25c3;
+}
+
+@media (max-width: 600px) {
+    #professional-page {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #professional-page section {
+        padding: 18px;
+    }
+
+    #professional-page > h1 {
+        font-size: 2rem;
+    }
+}
+/* PERSONALITY PAGE STYLING */
+
+#personality-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#personality-page > h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(238, 20, 20);
+    margin-bottom: 30px;
+}
+
+#personality-page section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(89, 19, 211, 0.08);
+}
+
+#personality-page h2 {
+    font-family: "Playfair Display", serif;
+    color: #9b25c3;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f3d5ee;
+    padding-bottom: 8px;
+}
+
+#personality-page h3 {
+    color: #0bb4c3;
+    font-size: 1.2rem;
+    margin: 18px 0 8px;
+}
+
+#personality-page p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #131312;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    #personality-page {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #personality-page > h1 {
+        font-size: 2rem;
+    }
+
+    #personality-page section {
+        padding: 18px;
+    }
+}
+/* PERSONAL DEVELOPMENT PAGE */
+
+#personal_development-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#personal_development-page > h1 {
+    font-family: "Playfair Display", serif;
+    color: rgb(234, 7, 135);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#personal_development-page section {
+    background: #ffffff;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#personal_development-page h2 {
+    font-family: "Playfair Display", serif;
+    color: #9b25c3;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f3d5ee;
+    padding-bottom: 8px;
+}
+
+#personal_development-page p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    #personal-development-page {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #personal-development-page section {
+        padding: 18px;
+    }
+}
